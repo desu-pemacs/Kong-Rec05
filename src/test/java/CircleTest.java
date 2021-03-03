@@ -3,7 +3,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.Random;
 
-// 2021-Mar-01  1:30p
+// 2021-Mar-01   1:30 pm
+// 2021-Mar-03  11:00 am
 
 class CircleTest {
     private static Random rand = new Random();
@@ -22,7 +23,7 @@ class CircleTest {
         p.setX(p.getX()+5);
         actual = c.toString();
         String message = "Expected:\n"+expected+"\nActual:\n"+actual+"\nMake sure you return a copy of the object!";
-        assertNotEquals(expected,actual,message);
+        assertEquals(expected,actual,message);
     }
 
     @Test
